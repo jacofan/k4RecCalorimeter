@@ -1109,8 +1109,7 @@ if doTopoClustering:
         Pi0PhotonIDAlg = ClusterPi0PhotonID(
             "IdentifiedPi0TRAPPISTScore",
             inClusters=TRAPPISTInferenceAlg.outClusters,
-            outPi0Particles=["TRAPPISTIdentifiedPi0"],
-            outPhotonParticles=["TRAPPISTIdentifiedPhoton"],
+            outParticles=["TRAPPISTParticles"],
             Threshold=0.5,
             OutputLevel=INFO,
         )
